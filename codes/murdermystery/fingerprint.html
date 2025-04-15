@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fingerprint Analysis</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .header {
+      background-color: #111;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 2px solid #0ff;
+    }
+
+    .found-fp {
+      margin-top: 20px;
+    }
+
+    .found-fp img {
+      width: 200px;
+      border: 2px solid #00ffcc;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .suspects {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .suspect-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .suspect-form img {
+      width: 180px;
+      height: 200px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .suspect-form img:hover {
+      box-shadow: 0 0 10px #00ffcc;
+      transform: scale(1.05);
+    }
+
+    .suspect-name {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #ccc;
+    }
+
+    .message-box {
+      margin-top: 40px;
+      background-color: #111;
+      border: 2px solid #00ffcc;
+      border-radius: 10px;
+      color: #00ffcc;
+      padding: 20px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      display: none;
+    }
+
+    #anita-msg:target {
+      display: block;
+    }
+
+    .next-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #00ffcc;
+      color: black;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .next-btn:hover {
+      background-color: #00dddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">🔍 Fingerprint Found at the Crime Scene</div>
+
+  <div class="found-fp">
+    <p>This is the fingerprint found in the study:</p>
+    <img src="../../images/found_fp.png" alt="Found Fingerprint">
+  </div>
+
+  <div class="suspects">
+    <form action="#">
+      <button type="submit" class="suspect-form">
+        <img src="../../images/fp_vedika.png" alt="Vedika">
+        <div class="suspect-name">Vedika</div>
+      </button>
+    </form>
+
+    <form action="#">
+      <button type="submit" class="suspect-form">
+        <img src="../../images/fp_karan.png" alt="Karan">
+        <div class="suspect-name">Karan</div>
+      </button>
+    </form>
+
+    <form action="#anita-msg">
+      <button type="submit" class="suspect-form">
+        <img src="../../images/found_fp.png" alt="Anita">
+        <div class="suspect-name">Anita</div>
+      </button>
+    </form>
+
+    <form action="#">
+      <button type="submit" class="suspect-form">
+        <img src="../../images/fp_sanjay.png" alt="Sanjay">
+        <div class="suspect-name">Sanjay</div>
+      </button>
+    </form>
+  </div>
+
+  <div id="anita-msg" class="message-box">
+    🧬 <strong>Fingerprint Match: Anita</strong><br><br>
+    🗣️ <em>"Yes, that’s my fingerprint. I was in the study earlier that day.  
+    I left a book on the shelf and didn’t notice anything suspicious.  
+    I swear I had nothing to do with the murder!"</em><br><br>
+
+    <a href="clue2.html" class="next-btn">🔎 Go to Rajesh's Bedroom</a>
+  </div>
+
+</body>
+</html>
+
+

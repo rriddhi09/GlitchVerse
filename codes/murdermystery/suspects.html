@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meet the Heirs - Bloodline: A Murder Mystery</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('../../images/suspects.jpg') no-repeat center center/cover;
+      font-family: 'Merriweather', serif;
+      color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 40px 0 20px;
+      color: #ffeaea;
+      text-align: center;
+      text-shadow: 2px 2px 8px #000000;
+    }
+
+    .suspects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .suspect-box {
+      background: rgba(139, 0, 0, 0.9);
+      border-left: 5px solid #ffcccc;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      max-width: 300px;
+      padding: 20px;
+      font-size: 1.1em;
+      border-radius: 12px;
+      color: #fff3f3;
+      transition: transform 0.3s;
+    }
+
+    .suspect-box:hover {
+      transform: scale(1.05);
+    }
+
+    .suspect-box span {
+      font-size: 1.8em;
+      margin-right: 10px;
+    }
+
+    .next-btn {
+      margin-top: auto;
+      margin-bottom: 40px;
+      align-self: center;
+      padding: 15px 35px;
+      font-size: 1.3em;
+      background-color: #a40000;
+      color: #fff3f3;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .next-btn:hover {
+      background-color: #cc0000;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>👥 Members of the Patel Mansion</h1>
+
+  <div class="suspects-container">
+    <div class="suspect-box">
+      <span>👤</span><strong>Vedika Patel</strong><br>
+      The loyal daughter. Managed the estate with discipline. Was Rajesh’s favorite—until recently.
+    </div>
+
+    <div class="suspect-box">
+      <span>👤</span><strong>Karan Patel</strong><br>
+      The ambitious son. Known for his arrogance and rivalry with his sister. Recently cut off from funding.
+    </div>
+
+    <div class="suspect-box">
+      <span>👤</span><strong>Anita Patel</strong><br>
+      Rajesh’s younger cousin. Lived in the mansion her entire life. Quiet, observant, and deeply protective of the family’s reputation.
+    </div>
+
+    <div class="suspect-box">
+      <span>👤</span><strong>Sanjay (Butler)</strong><br>
+      The loyal family servant. Present during the murder. Knows the layout and family history better than anyone.
+    </div>
+  </div>
+
+  <a href="clue1.html" class="next-btn">Search the Mansion 🔍</a>
+</body>
+</html>
+

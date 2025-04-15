@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Hall</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black; /* In case the image doesn't fill the entire screen */
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .background {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures the whole image is visible */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Button placed on the candles of the central candle stand */
+        .hidden-button {
+            position: absolute;
+            top: 55%;  /* Adjusted to match the central candle stand */
+            left: 57%; /* Positioned over the candles */
+            width: 80px;  /* Covers multiple candles */
+            height: 120px;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        /* Flicker or spark effect on hover */
+        .hidden-button::after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.8) 10%, rgba(255, 165, 0, 0) 70%);
+            top: -20px;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hidden-button:hover::after {
+            opacity: 1;
+            animation: flicker 0.3s infinite alternate;
+        }
+
+        /* Flickering effect */
+        @keyframes flicker {
+            0% { opacity: 0.8; transform: scale(1); }
+            100% { opacity: 0.5; transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="../../images/hall.png" alt="Grand Hall" class="background">
+        <a href="page2.html" class="hidden-button"></a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clue: Burned Note</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lora:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: black;
+      color: white;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('../../images/clue2.jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+    }
+
+    .hint-text {
+      text-align: center;
+      padding: 15px;
+      font-size: 20px;
+      font-style: italic;
+      color: #f8f5e6;
+      text-shadow: 0 0 6px #000;
+      background: rgba(0, 0, 0, 0.5);
+      border-top: 1px solid #555;
+      border-bottom: 1px solid #555;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .clickable-clue {
+      position: absolute;
+      bottom: 22%;
+      left: 47%;
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.85);
+      padding: 30px;
+      border: 2px solid #ff4444;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 90vw;
+    }
+
+    .popup img {
+      width: 400px;
+      max-width: 90vw;
+      border-radius: 8px;
+      box-shadow: 0 0 20px #ff0000;
+    }
+
+    .popup a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff4444;
+      color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    #popup:target {
+      display: block;
+    }
+
+    .suspects {
+      display: none;
+      text-align: center;
+      margin-top: 40px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    #suspects:target {
+      display: block;
+    }
+
+    .suspects p {
+      font-size: 1.5em;
+      color: #f8f5e6;
+      margin-bottom: 30px;
+      text-shadow: 0 0 6px #000;
+    }
+
+    .suspects form {
+      display: inline-block;
+      margin: 12px;
+    }
+
+    .suspects button {
+      padding: 12px 24px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 2px solid #ff4444;
+      color: #f8f5e6;
+      font-family: 'Lora', serif;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .suspects button:hover {
+      background-color: #ff4444;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    .response {
+      display: none;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 18px;
+      font-family: 'Lora', serif;
+    }
+
+    #karan-msg:target,
+    #anita-msg:target,
+    #vedika-msg:target,
+    #sanjay-msg:target {
+      display: block;
+    }
+
+    .correct {
+      color: #00ffcc;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      border-radius: 10px;
+      width: fit-content;
+      margin: 0 auto;
+      border: 2px solid #00ffcc;
+      box-shadow: 0 0 12px #00ffcc;
+    }
+
+    .wrong {
+      color: #ff4444;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      border-radius: 10px;
+      width: fit-content;
+      margin: 0 auto;
+      border: 2px solid #ff4444;
+    }
+
+    .next-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ff4444;
+      color: black;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .next-btn:hover {
+      background-color: #ff3333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <p class="hint-text">Something by the fire doesn't quite belong...</p>
+
+  <a href="#popup" class="clickable-clue"></a>
+
+  <div id="popup" class="popup">
+    <img src="paper.png" alt="Burned note clue">
+    <br>
+    <a href="#suspects">Close</a>
+  </div>
+
+  <div id="suspects" class="suspects">
+    <p>Who do you think is being talked about in the note?</p>
+    <form action="#karan-msg">
+      <button type="submit">Karan</button>
+    </form>
+    <form action="#anita-msg">
+      <button type="submit">Anita</button>
+    </form>
+    <form action="#vedika-msg">
+      <button type="submit">Vedika</button>
+    </form>
+    <form action="#sanjay-msg">
+      <button type="submit">Sanjay</button>
+    </form>
+  </div>
+
+  <div id="karan-msg" class="response correct">
+    🕵️‍♂️ <strong>Karan says:</strong><br>
+    <em>"I didn’t threaten anyone! If someone changed the will, it wasn’t me."</em><br>
+    <a href="clue3.html" class="next-btn">Go to Garage 🔍</a>
+  </div>
+
+  <div id="anita-msg" class="response wrong">
+    ❌ Nope, Anita doesn't match the clue.
+  </div>
+
+  <div id="vedika-msg" class="response wrong">
+    ❌ Nope, Vedika doesn't match the clue.
+  </div>
+
+  <div id="sanjay-msg" class="response wrong">
+    ❌ Nope, Sanjay doesn't match the clue.
+  </div>
+
+</body>
+</html>
+
+
+
+
+

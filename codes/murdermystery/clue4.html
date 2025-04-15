@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clue 4 – Storage Room</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background-color: black;
+      color: white;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: url('../../images/clue4.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .hint {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: #ffd700;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.3em;
+      z-index: 2;
+    }
+
+    .button-area {
+      position: absolute;
+      top: 67%;
+      left: 52%;
+      transform: translate(-50%, -50%);
+      width: 230px;
+      height: 130px;
+      z-index: 2;
+    }
+
+    .invisible-button {
+      width: 100%;
+      height: 200%;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .clue-section {
+      display: none;
+      background: black;
+      min-height: 100vh;
+      padding: 30px 20px;
+      text-align: center;
+      overflow-y: auto;
+    }
+
+    #records:target {
+      display: block;
+    }
+
+    .clue-img {
+      max-width: 90%;
+      border: 4px solid white;
+      border-radius: 8px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .next-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      font-size: 1.1em;
+      background-color: #e6c87c;
+      color: #000;
+      text-decoration: none;
+      border: 2px solid #000;
+      border-radius: 8px;
+    }
+
+    .next-button:hover {
+      background-color: #f8e5aa;
+    }
+
+    .clue-text {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="hint">Something about that box feels important…</div>
+
+    <form action="#records" class="button-area">
+      <button type="submit" class="invisible-button" aria-label="Click to open estate box"></button>
+    </form>
+  </div>
+
+  <!-- Clue reveal section -->
+  <div id="records" class="clue-section">
+    <h2>The Truth Hidden in the Box</h2>
+    <img src="records.jpg" alt="Estate Will Documents" class="clue-img" />
+    <div class="clue-text">
+      <p>
+        You find two documents inside.
+        <br><br>
+        📝 <strong>The official will</strong> — signed and stamped — gives everything to Vedika.<br>
+        📝 <strong>The second?</strong> Handwritten… and cold:<br>
+        <em>“Nothing shall be left to Karan Patel. He is the son of my late wife, not mine.”</em><br><br>
+        This wasn’t just about money. It was personal.
+      </p>
+    </div>
+    <a href="final.html" class="next-button">Let's Catch the Murderer</a>
+  </div>
+
+</body>
+</html>
+
+

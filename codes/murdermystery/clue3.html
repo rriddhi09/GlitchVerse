@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Garage Clue</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      font-family: sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .bg-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .hint {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(15, 15, 15, 0.8);
+      color: #e0b0b0;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-style: italic;
+      font-size: 17px;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      border: 1px solid #5c3b3b;
+      box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.05);
+      z-index: 2;
+    }
+
+    .invisible-button {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .glove-button,
+    .shoe-button {
+      position: absolute;
+      width: 130px;
+      height: 60px;
+      z-index: 2;
+    }
+
+    .glove-button {
+      top: 90%;
+      left: 60%;
+    }
+
+    .shoe-button {
+      top: 87%;
+      left: 72%;
+    }
+
+    .clue-text {
+      position: absolute;
+      bottom: 40px;
+      left: 38%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #00ffee;
+      padding: 22px 30px;
+      border-radius: 12px;
+      font-size: 18px;
+      max-width: 80%;
+      line-height: 1.5;
+      text-align: center;
+      border: 2px solid #00ffee;
+      box-shadow: 0 0 20px #00ffee;
+      display: none;
+      z-index: 3;
+    }
+
+    #glove-clue:target,
+    #shoe-clue:target {
+      display: block;
+    }
+
+    .next-link {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #32cac3;
+      color: #010312;
+      padding: 14px 28px;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 8px;
+      border: 2px solid #fff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  
+  <img src="../../images/clue3.jpg" alt="Garage scene" class="bg-image">
+
+  <div class="hint">Near the shelf... something stained and discarded might hold the truth.</div>
+
+  <form action="#glove-clue" class="glove-button">
+    <button class="invisible-button" type="submit" aria-label="Inspect gloves"></button>
+  </form>
+
+  <form action="#shoe-clue" class="shoe-button">
+    <button class="invisible-button" type="submit" aria-label="Inspect shoes"></button>
+  </form>
+
+  <div id="glove-clue" class="clue-text">
+    The killer was smart — no fingerprints thanks to those gloves. But the shoes? Definitely Vedika's. She’s the only one who wears that style…
+  </div>
+
+  <div id="shoe-clue" class="clue-text">
+    🗣️ <em>"Wait… those are my shoes? I haven’t stepped foot in the garage in two days.  
+    Why would I kill the only man who ever loved me like his own child?" (She was adopted)</em>
+    <div><a href="clue4.html" class="next-link">Go to the Storage Room</a></div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+

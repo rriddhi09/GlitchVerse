@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Study - Clue 1</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+      scroll-behavior: smooth;
+      background-color: black;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: url("../../images/clue1.png") no-repeat center center;
+      background-size: contain;
+    }
+
+    .hint {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-align: center;
+      z-index: 2;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .hint span {
+      display: block;
+    }
+
+    form {
+      position: absolute;
+    }
+
+    .invisible-btn {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .weapon-form {
+      top: 90.5%;
+      left: 22.5%;
+      width: 23%;
+      height: 6.5%;
+    }
+
+    .fingerprint-form {
+      top: 71%;
+      left: 58.8%;
+      width: 5.5%;
+      height: 7.5%;
+    }
+
+    .message {
+      display: none;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #111;
+      color: #00ffcc;
+      padding: 20px 30px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      text-align: center;
+      max-width: 90%;
+      box-shadow: 0 0 10px #00ffcc;
+      border: 2px solid #00ffcc;
+      z-index: 3;
+    }
+
+    #weapon-msg:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="hint">
+    <span>🔍 Hint: Find the murder weapon</span>
+    <span>🧬 And don't miss the fingerprint on drawer!</span>
+  </div>
+
+  <form action="#weapon-msg" class="weapon-form">
+    <button type="submit" class="invisible-btn"></button>
+  </form>
+
+  <form action="fingerprint.html" class="fingerprint-form">
+    <button type="submit" class="invisible-btn"></button>
+  </form>
+
+  <div id="weapon-msg" class="message">
+    🗡️ You found the murder weapon!<br>
+    It’s Rajesh Patel’s nameplate — sharp, heavy, and stained with blood.
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wooden Guardian Room</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    .room {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  width: 100vw;  /* Full screen width */
+  background-image: url('../../images/underground.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%; /* Stretch both width and height to fill screen */
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+
+    .invisible-button {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .invisible-button:hover {
+      box-shadow: 0 0 15px 5px rgba(255, 255, 0, 0.8);
+      animation: flicker 0.8s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0% { box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.3); }
+      100% { box-shadow: 0 0 15px 6px rgba(255, 255, 0, 0.8); }
+    }
+
+    .jungle-button {
+      top: 35%;
+      left: 28%;
+    }
+
+    .gorilla-button {
+      top: 62%;
+      left: 70.5%;
+    }
+  </style>
+</head>
+<body>
+  <div class="room">
+    <div class="room">
+        <a href="page3.html" class="invisible-button jungle-button" title="Explore the jungle wall"></a>
+        <a href="wrong.html" class="invisible-button gorilla-button" title="Enter the wooden guardian"></a>
+      </div>
+  </div>
+</body>
+</html>
