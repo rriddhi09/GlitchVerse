@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 * {
     margin: 0;
     padding: 0;
@@ -21,19 +22,18 @@
     background: rgba(44, 7, 53, 0.2);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
   
   .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
+    font-size:35px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   .logo {
     font-size: 3rem;
     font-weight: 700;
@@ -187,6 +187,20 @@
     background-position: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   }
+  .card-btn {
+    display: inline-block;
+    padding: 1.4rem 2.5rem;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, #ff5ecb, #3bc9f3);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-btn:hover {
+    transform: translateY(-4px);
+  }
   
   .trophy {
     border-radius: 50%;
@@ -290,6 +304,8 @@
       height: 80px;
     }
   }
+  
+  
   
   
 >>>>>>> 45ddcd7 (added folders and files yet to be modified)
