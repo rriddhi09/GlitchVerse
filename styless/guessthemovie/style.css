@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
 body {
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     text-align: center;
     background-color: #ffebcc;
     display: flex;
