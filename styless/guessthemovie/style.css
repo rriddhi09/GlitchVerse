@@ -9,10 +9,10 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
-    background-image: url('../../images/background.jpg'); /* Your image */
-    background-size: 100% 100%; /* Ensures it covers the screen without enlarging */
-    background-position: center; /* Keeps it centered */
-    background-repeat: no-repeat; /* Prevents tiling */
+    background-image: url('../../images/background.jpg'); 
+    background-size: 100% 100%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .container {
