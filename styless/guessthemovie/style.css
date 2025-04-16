@@ -10,10 +10,9 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('../../images/background.jpg'); /* Your image */
-    background-size: cover; /* Scales nicely for all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: 100% 100%; /* Ensures it covers the screen without enlarging */
+    background-position: center; /* Keeps it centered */
+    background-repeat: no-repeat; /* Prevents tiling */
 }
 
 .container {
@@ -22,41 +21,31 @@ body {
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     animation: bounce 1s infinite alternate;
-    width: 90%;
-    max-width: 500px;
 }
-
 @keyframes bounce {
     0% { transform: translateY(0); }
     100% { transform: translateY(-5px); }
 }
-
 h1 {
     color: #ff6600;
-    font-size: 6vw;
+    font-size: 28px;
 }
-
 .emoji {
-    font-size: 12vw;
+    font-size: 50px;
     margin: 15px;
 }
-
 input {
-    width: 80%;
     padding: 12px;
-    font-size: 4vw;
+    font-size: 18px;
     border: 2px solid #ff6600;
     border-radius: 8px;
     text-align: center;
     outline: none;
-    max-width: 400px;
 }
-
 button {
     margin-top: 15px;
     padding: 12px 25px;
-    font-size: 4vw;
-    max-width: 300px;
+    font-size: 18px;
     color: white;
     background-color: #ff6600;
     border: none;
@@ -67,11 +56,10 @@ button {
 button:hover {
     background-color: #e65c00;
 }
-
 .home {
     display: inline-block;
     margin-top: 20px;
-    font-size: 4vw;
+    font-size: 18px;
     color: white;
     background-color: #ff6600;
     border: none;
@@ -84,11 +72,10 @@ button:hover {
 .home:hover {
     background-color: #e65c00;
 }
-
 .result, .next {
     display: none;
     margin-top: 20px;
-    font-size: 5vw;
+    font-size: 22px;
     color: #008000;
 }
 #result:target {
@@ -96,24 +83,5 @@ button:hover {
 }
 #result:target + .next {
     display: block;
-}
-
-/* ✅ Responsive Tuning for larger screens */
-@media (min-width: 768px) {
-    h1 {
-        font-size: 28px;
-    }
-
-    .emoji {
-        font-size: 50px;
-    }
-
-    input, button, .home {
-        font-size: 18px;
-    }
-
-    .result, .next {
-        font-size: 22px;
-    }
-}
+} 
 
