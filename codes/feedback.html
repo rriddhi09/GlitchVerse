@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - GlitzVerse</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-section {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 2rem;
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #ff6ec7;
+      font-family: 'Poppins', sans-serif;
+    }
+    .page-section h1 {
+      font-size: 2.5rem;
+      color: #ff66b2;
+      margin-bottom: 1rem;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+      background: #2c2c44;
+      color: #fff;
+    }
+    form button {
+      margin-top: 1.5rem;
+      padding: 1rem 2rem;
+      background: #ff66b2;
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .button-container{
+      margin-top: 1.5rem;
+    }
+    .back-button {
+      padding: 0.7rem 1.4rem;
+      background-color: #00cfff;
+      color: #24243e;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #00aac6;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-section">
+    <h1>We Value Your Feedback</h1>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea rows="5" placeholder="Write your feedback here..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="button-container">
+      <a href="../index.html" class="back-button">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>

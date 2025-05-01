@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Chuckles: Fun Space Facts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            min-height: 100vh;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 70%; /* Increased container width for larger cards */
+            margin: 0 auto;
+            padding: 50px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+            color: #F8E71C;
+            text-shadow: 0 0 10px rgba(248, 231, 28, 0.5);
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            color: #FF9900;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            font-size: 3.2rem;
+            margin-bottom: 40px;
+            color: #8CDBFF;
+        }
+        
+        .fact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjusted minimum size for better spacing */
+            gap: 60px; /* Increased gap between cards */
+            margin-bottom: 50px;
+        }
+        
+        .fact-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px; /* Increased padding for more space inside the cards */
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+            height: 100%; /* Ensure cards expand properly */
+        }
+        
+        .fact-card:hover {
+            transform: translateY(-10px);
+            border-color: #FF9900;
+        }
+        
+        .fact-title {
+            color: #FF9900;
+            font-size: 3.5rem; /* Increased title size */
+            margin-bottom: 15px; /* Increased margin for better spacing */
+        }
+        
+        .fact-text {
+            line-height: 1.6;
+            font-size: 2.2rem; /* Slightly larger font for readability */
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            color: #8CDBFF;
+        }
+        
+        .stars-bg {
+            background-image: radial-gradient(white 1px, transparent 1px);
+            background-size: 50px 50px;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        .button-container{
+      margin-top: 1.5rem;
+      /* text-align: center; */
+    }
+    .back-button {
+      padding: 1rem 1.3rem;
+      background-color: #00cfff;
+      color: #24243e;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #00aac6;
+    }
+    </style>
+</head>
+<body>
+    <div class="stars-bg"></div>
+    <div class="button-container">
+        <a href="../../index.html" class="back-button">Back to Home</a>
+      </div>
+    <div class="container">
+        <header>
+            <h1>COSMIC CHUCKLES</h1>
+            <p class="subtitle">Space Facts That Are Out Of This World!</p>
+        </header>
+        
+        <main>
+            <div class="fact-container">
+                <div class="fact-card">
+                    <h3 class="fact-title">Space Is Completely Silent</h3>
+                    <p class="fact-text">Despite what sci-fi movies show, in space no one can hear you laugh at your own jokes. There's no medium for sound waves to travel through, making it the perfect place for introverts!</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3 class="fact-title">Astronaut Ice Cream Is A Lie</h3>
+                    <p class="fact-text">That freeze-dried ice cream sold as "astronaut ice cream" has never actually been to space. NASA prefers not to send crumbly foods that could float into equipment. Sorry, childhood dreams!</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3 class="fact-title">Venus Has The Longest Day</h3>
+                    <p class="fact-text">A single day on Venus lasts longer than its entire year! At 243 Earth days, it's the ultimate "I'll do it tomorrow" excuse in the solar system.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3 class="fact-title">The Moon Is Stealing From Us</h3>
+                    <p class="fact-text">The Moon is slowly drifting away from Earth at about 1.5 inches per year. It's the galaxy's slowest escape plan, but it's working!</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3 class="fact-title">Space Smell</h3>
+                    <p class="fact-text">Astronauts report that space smells like seared steak, hot metal, and welding fumes. Space: the final frontier of weird smells.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3 class="fact-title">Saturn Could Float</h3>
+                    <p class="fact-text">Saturn is so light that if you had a bathtub big enough, it would float! It's basically the rubber ducky of the solar system.</p>
+                </div>
+            </div>
+            
+            <div class="fact-card">
+                <h3 class="fact-title">Cosmic Comedy Club</h3>
+                <p class="fact-text">Why did the sun go to school? To get brighter!</p>
+                <p class="fact-text">How do you organize a space party? You planet!</p>
+                <p class="fact-text">What kind of music do planets listen to? Nep-tunes!</p>
+                <p class="fact-text">Why don't aliens visit our solar system? Bad reviews. Only one star!</p>
+            </div>
+        </main>
+        <footer>
+            <p>© 2025 Cosmic Chuckles | No aliens were harmed in the making of this website</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazing Science Facts</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: #0a192f;
+      color: #e6f1ff;
+    }
+    
+    .container {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 7rem;
+    }
+    
+    header {
+      text-align: center;
+      padding: 3rem 0;
+      background: linear-gradient(135deg, #1a365d 0%, #0a192f 100%);
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    h1 {
+      font-size: 4.5rem;
+      margin-bottom: 1rem;
+      color: #64ffda;
+      text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+    }
+    
+    p.subtitle {
+      font-size: 2.2rem;
+      color: #8892b0;
+      margin-bottom: 2rem;
+    }
+    
+    .facts-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .fact-card {
+      background: linear-gradient(180deg, #172a45 0%, #1f3a60 100%);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      border-top: 3px solid #64ffda;
+    }
+    
+    .fact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    .fact-card h2 {
+      color: #64ffda;
+      margin-bottom: 1rem;
+      font-size: 3.5rem;
+    }
+    
+    .fact-card p {
+      color: #a8b2d1;
+      line-height: 1.6;
+      font-size: 2.2rem;
+    }
+    
+    .fact-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+      padding: 0.5rem;
+      border-radius: 50%;
+      background-color: rgba(100, 255, 218, 0.1);
+      color: #64ffda;
+    }
+    
+    .fact-number {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: rgba(100, 255, 218, 0.2);
+      color: #64ffda;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-weight: bold;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem 0;
+      color: #8892b0;
+      border-top: 1px solid rgba(100, 255, 218, 0.1);
+    }
+    
+    .source {
+      font-size: 0.9rem;
+      color: #64ffda;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+    .facts-container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+   }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .facts-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+@media (max-width: 1024px) {
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .facts-container {
+    grid-template-columns: 1fr;
+  }
+}
+.button-container{
+      margin-top: 1.5rem;
+      /* text-align: center; */
+    }
+    .back-button {
+      padding: 1rem 1.3rem;
+      background-color: #00cfff;
+      color: #24243e;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #00aac6;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <a href="../../index.html" class="back-button">Back to Home</a>
+  </div>
+  <div class="container">
+    <header>
+      <h1>Mind-Blowing Science Facts</h1>
+      <p class="subtitle">Discover the wonders of our universe through these fascinating scientific discoveries</p>
+    </header>
+    
+    <div class="facts-container">
+      <div class="fact-card">
+        <div class="fact-number">1</div>
+        <span class="fact-icon">⚡</span>
+        <h2>Lightning's Power</h2>
+        <p>A single bolt of lightning contains enough energy to toast 100,000 slices of bread. Lightning can reach temperatures of up to 30,000°C (54,000°F), which is about five times hotter than the surface of the Sun.</p>
+        <p class="source">Source: National Geographic</p>
+      </div>
+      
+      <div class="fact-card">
+        <div class="fact-number">2</div>
+        <span class="fact-icon">🧠</span>
+        <h2>Brain Power</h2>
+        <p>Your brain generates enough electricity to power a small light bulb. The human brain contains approximately 86 billion neurons, and they communicate via electrical impulses that collectively could power a 23-watt LED light bulb.</p>
+        <p class="source">Source: Scientific American</p>
+      </div>
+      
+      <div class="fact-card">
+        <div class="fact-number">3</div>
+        <span class="fact-icon">🦕</span>
+        <h2>Dinosaur Timeline</h2>
+        <p>Humans are closer in time to Tyrannosaurus Rex than T-Rex was to Stegosaurus. T-Rex lived about 68 million years ago, Stegosaurus about 150 million years ago—a gap of 82 million years, which is longer than the 68 million years separating us from T-Rex.</p>
+        <p class="source">Source: Smithsonian Museum of Natural History</p>
+      </div>
+      
+      <div class="fact-card">
+        <div class="fact-number">4</div>
+        <span class="fact-icon">🪐</span>
+        <h2>Saturn Could Float</h2>
+        <p>Saturn has such low density that it would float in water if there were a bathtub large enough to hold it. With a density of 0.687 g/cm³, Saturn is the only planet in our solar system that would float in water.</p>
+        <p class="source">Source: NASA</p>
+      </div>
+      
+      <div class="fact-card">
+        <div class="fact-number">5</div>
+        <span class="fact-icon">🌊</span>
+        <h2>Ocean Secrets</h2>
+        <p>We've explored less than 5% of the Earth's oceans. In fact, we have more detailed maps of Mars than we do of our ocean floors. The deepest known point is the Challenger Deep in the Mariana Trench at about 11,000 meters (36,000 feet).</p>
+        <p class="source">Source: NOAA</p>
+      </div>
+      
+      <div class="fact-card">
+        <div class="fact-number">6</div>
+        <span class="fact-icon">⏱️</span>
+        <h2>Time Dilation</h2>
+        <p>Astronauts on the International Space Station age slightly slower than people on Earth due to time dilation effects. After spending 6 months in orbit, ISS astronauts have aged about 0.005 seconds less than people on Earth.</p>
+        <p class="source">Source: NASA</p>
+      </div>
+      
+      <div class="fact-card">
+        <div class="fact-number">7</div>
+        <span class="fact-icon">🧬</span>
+        <h2>DNA Journey</h2>
+        <p>If you uncoiled all the DNA in your body and placed it end to end, it would stretch approximately 10 billion miles—from Earth to Pluto and back, more than 20 times.</p>
+        <p class="source">Source: Genetics Society of America</p>
+      </div>
+      
+      <div class="fact-card">
+        <div class="fact-number">8</div>
+        <span class="fact-icon">🔭</span>
+        <h2>Cosmic Scale</h2>
+        <p>There are more stars in the observable universe than grains of sand on all the beaches on Earth. Current estimates suggest there are at least 10²⁴ stars (1 septillion) compared to roughly 10²³ grains of sand globally.</p>
+        <p class="source">Source: European Space Agency</p>
+      </div>
+      
+      <div class="fact-card">
+        <div class="fact-number">9</div>
+        <span class="fact-icon">🐜</span>
+        <h2>Ant Strength</h2>
+        <p>Ants can lift up to 5,000 times their body weight. If humans had this strength-to-weight ratio, an average person could lift a 65-ton object—equivalent to about 10 elephants.</p>
+        <p class="source">Source: Journal of Biomechanics</p>
+      </div>
+    </div>
+    
+    <footer>
+      <p>© 2025 Amazing Science Facts | Explore the wonders of science</p>
+    </footer>
+  </div>
+</body>
+</html>

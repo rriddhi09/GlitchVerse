@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Wonders: Fun Animal Facts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #134e5e, #71b280);
+            color: #fff;
+            min-height: 100vh;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 95%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 5.5rem;
+            margin-bottom: 20px;
+            color: #FFEB3B;
+            text-shadow: 0 0 10px rgba(255, 235, 59, 0.5);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #FFA000;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 3.2rem;
+            margin-bottom: 40px;
+            color: #E1F5FE;
+        }
+
+    
+        .fact-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+            min-height: 400px; /* Taller cards */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .fact-card:hover {
+            transform: translateY(-10px);
+            border-color: #FFA000;
+        }
+
+        .fact-title {
+            color: #FFA000;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .fact-text {
+            line-height: 1.8;
+            font-size: 2.3rem;
+            flex-grow: 1;
+            overflow: auto; /* Scroll inside if too much text */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            color: #E1F5FE;
+        }
+
+        .pattern-bg {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px);
+            background-size: 50px 50px;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        .fact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.button-container{
+      margin-top: 1.5rem;
+      /* text-align: center; */
+    }
+    .back-button {
+      padding: 1rem 1.3rem;
+      background-color: #00cfff;
+      color: #24243e;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #00aac6;
+    }
+@media (max-width: 1024px) {
+    .fact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .fact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+    </style>
+</head>
+<body>
+<div class="pattern-bg"></div>
+<div class="button-container">
+    <a href="../../index.html" class="back-button">Back to Home</a>
+  </div>
+<div class="container">
+    <header>
+        <h1>WILD WONDERS</h1>
+        <p class="subtitle">Animal Facts That Will Make You Go Wild!</p>
+    </header>
+
+    <main>
+        <div class="fact-container">
+            <div class="fact-card">
+                <h3 class="fact-title">Octopus Party Tricks</h3>
+                <p class="fact-text">Octopuses have three hearts, nine brains, and blue blood. They're basically the overachievers of the ocean who still find time to squeeze through any hole larger than their beak!</p>
+            </div>
+
+            <div class="fact-card">
+                <h3 class="fact-title">Sloth Bathroom Schedule</h3>
+                <p class="fact-text">Sloths only poop once a week, and they can lose up to one-third of their body weight when they do. Talk about the ultimate weight loss program!</p>
+            </div>
+
+            <div class="fact-card">
+                <h3 class="fact-title">Flamingo Yoga Masters</h3>
+                <p class="fact-text">Flamingos can only eat with their heads upside down, and they stand on one leg because it's actually less effort than standing on two. They're basically doing yoga their entire lives.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3 class="fact-title">Wombat Poop Cubes</h3>
+                <p class="fact-text">Wombats produce cube-shaped poop. This might be the only example in nature where someone literally poops bricks. They mark their territory with these poop cubes, which don't roll away!</p>
+            </div>
+
+            <div class="fact-card">
+                <h3 class="fact-title">Mantis Shrimp Punch</h3>
+                <p class="fact-text">The mantis shrimp can punch with the force of a .22 caliber bullet, so fast it creates a flash of light and a shockwave that can break aquarium glass. Never challenge one to an arm-wrestling match!</p>
+            </div>
+
+            <div class="fact-card">
+                <h3 class="fact-title">Goat Pupils</h3>
+                <p class="fact-text">Goats have rectangular pupils that allow them to see nearly 360 degrees around themselves. They're basically walking surveillance cameras with hooves.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3 class="fact-title">Animal Joke Corner</h3>
+                <p class="fact-text">
+                    What do you call a sleeping bull? A bulldozer! <br><br>
+                    Why don't scientists trust atoms? Because they make up everything! <br><br>
+                    What do you call an alligator in a vest? An investigator! <br><br>
+                    What's a frog's favorite type of shoes? Open toad sandals!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Wild Wonders | No animals were interviewed during research for this website</p>
+    </footer>
+</div>
+</body>
+</html>

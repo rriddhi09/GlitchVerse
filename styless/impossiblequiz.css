@@ -302,7 +302,24 @@ input[type="radio"].wrong:checked ~ .result.wrong {
     font-weight: bold;
     color: #e74c3c;
 }
-
+.button-container{
+    margin-top: 1.5rem;
+    margin-left:0.5rem; 
+  }
+  .back-button {
+    padding: 0.7rem 1.4rem;
+    background-color: #00cfff;
+    color: #24243e;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .back-button:hover {
+    background-color: #00aac6;
+  }
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     h1 {

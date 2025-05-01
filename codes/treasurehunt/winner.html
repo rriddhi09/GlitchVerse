@@ -6,17 +6,18 @@
   <title>Treasure Unlocked</title>
   <style>
     html, body {
-        
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
       overflow: hidden;
     }
-     p{
-        text-align: center;
-        color: aliceblue;
-     }
+
+    p {
+      text-align: center;
+      color: aliceblue;
+    }
+
     body {
       position: relative;
       width: 100vw;
@@ -26,6 +27,7 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+
     .winner-text {
       position: absolute;
       top: 30%;
@@ -37,10 +39,32 @@
       font-weight: bold;
       text-align: center;
     }
-    
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #222;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #444;
+    }
   </style>
 </head>
 <body>
-    <div class="winner-text">Winner</div>
+  <a href="../../index.html">
+  <button class="back-button">Back to Main Page</button>
+  </a>
+  <div class="winner-text">Winner</div>
+  </body>
 </body>
 </html>
