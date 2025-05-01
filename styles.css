@@ -1,0 +1,358 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #2c0735 0%, #411465 50%, #2c0735 100%);
+    color: #ffffff;
+    min-height: 100vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(44, 7, 53, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 2rem 0;
+  }
+  
+  .nav-container {
+    font-size:35px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  .logo {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #00ffcc, #7b2ff7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00ffcc;
+  }
+  
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(rgba(44, 7, 53, 0.7), rgba(44, 7, 53, 0.7)),
+      url('https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+  }
+  
+  .hero h1 {
+    font-size: clamp(2.5rem, 6vw, 6rem);
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #00ffcc, #7b2ff7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .hero p {
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(to right, #7b2ff7, #9b4bff);
+    color: white;
+  }
+  
+  .btn-secondary {
+    background: linear-gradient(to right, #00ffcc, #00cc9f);
+    color: #2c0735;
+  }
+  
+  /* Sections */
+  section {
+    padding: 5rem 2rem;
+  }
+  
+  .featured,
+  .facts,
+  .leaderboard,
+  .jokes {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  section h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 4.5rem);
+    margin-bottom: 3rem;
+    color: #00ffcc;
+  }
+  
+  .card-grid,
+  .fact-grid,
+  .leaderboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card,
+  .fact-card,
+  .joke-card,
+  .leaderboard-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    border: 2px solid rgba(0, 255, 204, 0.3);
+    font-size: 1rem;
+  }
+  
+  .card:hover,
+  .fact-card:hover,
+  .joke-card:hover,
+  .leaderboard-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-icon,
+  .fact-icon,
+  .trophy {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+/* Game Icons */
+.card-icon.game-icon {
+    background-image: url('/images/murdermystery.jpg'); /* Example path */
+  }
+  
+  .card-icon.puzzle-icon {
+    background-image: url('/images/treasurehunt.jpg'); /* Example path */
+  }
+  
+  .card-icon.arcade-icon {
+    background-image: url('/images/impossiblequiz.jpg'); /* Example path */
+  }
+  
+  /* Specific icons for additional games */
+  .card:nth-child(4) .card-icon {
+    background-image: url('/images/guessmovie.jpg');
+  }
+  
+  .card:nth-child(5) .card-icon {
+    background-image: url('/images/blitzlight.jpg');
+  }
+  
+  .card:nth-child(6) .card-icon {
+    background-image: url('/images/checkblock.jpg');
+  }
+  
+  /* Fact Icons */
+  .fact-icon.space-icon {
+    background-image: url('/images/spacefact.jpg'); /* Example path */
+  }
+  
+  .fact-icon.animal-icon {
+    background-image: url('/images/animalfact.jpg'); /* Example path */
+  }
+  
+  .fact-icon.science-icon {
+    background-image: url('/images/sciencefact.jpg'); /* Example path */
+  }
+  
+  /* Ensure no underline and normal white text for links in the fact cards */
+  .fact-card a {
+    text-decoration: none;  /* Remove underline */
+    color: white;           /* Set text color to white */
+    display: block;         /* Ensure the entire card is clickable */
+  }
+  
+  .fact-card a:hover {
+    color: #00ffcc;         /* Change color on hover (optional, for a nice hover effect) */
+  }
+  
+  .card-btn {
+    display: inline-block;
+    padding: 1.4rem 2.5rem;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, #ff5ecb, #3bc9f3);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-btn:hover {
+    transform: translateY(-4px);
+  }
+  
+  .trophy {
+    border-radius: 50%;
+  }
+  
+  .gold .trophy {
+    background-image: url(/images/goldentrophy.png);
+  }
+  
+  .silver .trophy {
+    background-image: url(/images/silvertrophy.jpg);
+  }
+  
+  .bronze .trophy {
+    background-image: url(/images/bronzetrophy.png);
+  }
+  
+  footer {
+    background: rgba(44, 7, 53, 0.5);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+  
+  .simple-info {
+    background-color: #000000;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .simple-info h2 {
+    font-size: 2.5rem;
+    color: #ff5ecb;
+    margin-bottom: 3rem;
+  }
+  
+  .simple-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .simple-links li a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .simple-links li a:hover {
+    color: #3bc9f3;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero h1,
+    .hero p,
+    .btn {
+      text-align: center;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card,
+    .fact-card,
+    .joke-card,
+    .leaderboard-card {
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .card-icon,
+    .fact-icon,
+    .trophy {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  
+  
