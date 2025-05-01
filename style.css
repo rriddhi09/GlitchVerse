@@ -70,7 +70,7 @@
     text-align: center;
     padding: 2rem;
     background: linear-gradient(rgba(44, 7, 53, 0.7), rgba(44, 7, 53, 0.7)),
-      url('https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+      url('images/backgroundmain.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -188,41 +188,41 @@
   }
 /* Game Icons */
 .card-icon.game-icon {
-    background-image: url('/images/murdermystery.jpg'); /* Example path */
+    background-image: url('images/murdermystery.jpg'); /* Example path */
   }
   
   .card-icon.puzzle-icon {
-    background-image: url('/images/treasurehunt.jpg'); /* Example path */
+    background-image: url('images/treasurehunt.jpg'); /* Example path */
   }
   
   .card-icon.arcade-icon {
-    background-image: url('/images/impossiblequiz.jpg'); /* Example path */
+    background-image: url('images/impossiblequiz.jpg'); /* Example path */
   }
   
   /* Specific icons for additional games */
   .card:nth-child(4) .card-icon {
-    background-image: url('/images/guessmovie.jpg');
+    background-image: url('images/guessmovie.jpg');
   }
   
   .card:nth-child(5) .card-icon {
-    background-image: url('/images/blitzlight.jpg');
+    background-image: url('images/blitzlight.jpg');
   }
   
   .card:nth-child(6) .card-icon {
-    background-image: url('/images/checkblock.jpg');
+    background-image: url('images/checkblock.jpg');
   }
   
   /* Fact Icons */
   .fact-icon.space-icon {
-    background-image: url('/images/spacefact.jpg'); /* Example path */
+    background-image: url('images/spacefact.jpg'); /* Example path */
   }
   
   .fact-icon.animal-icon {
-    background-image: url('/images/animalfact.jpg'); /* Example path */
+    background-image: url('images/animalfact.jpg'); /* Example path */
   }
   
   .fact-icon.science-icon {
-    background-image: url('/images/sciencefact.jpg'); /* Example path */
+    background-image: url('images/sciencefact.jpg'); /* Example path */
   }
   
   /* Ensure no underline and normal white text for links in the fact cards */
@@ -256,15 +256,15 @@
   }
   
   .gold .trophy {
-    background-image: url(/images/goldentrophy.png);
+    background-image: url(images/goldentrophy.png);
   }
   
   .silver .trophy {
-    background-image: url(/images/silvertrophy.jpg);
+    background-image: url(images/silvertrophy.jpg);
   }
   
   .bronze .trophy {
-    background-image: url(/images/bronzetrophy.png);
+    background-image: url(images/bronzetrophy.png);
   }
   
   footer {
